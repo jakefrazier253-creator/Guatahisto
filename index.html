@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Layers of Time: Guatemala &amp; Belize Cultural Companion</title>
+<style>
+  :root{
+    --ink:#22252E; --paper:#FBFAF7;
+    --cochineal:#9E2B3B; --jade:#2F7D6D; --indigo:#2C3E6B;
+    --marigold:#D9A13D; --lake:#4A7FA5; --soft:#EFEBE2; --line:#DDD6C8;
+    --night:#1A2233;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif; font-size:17.5px; line-height:1.7;}
+  .sans{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+  .sash{height:10px; background:repeating-linear-gradient(90deg,
+    var(--cochineal) 0 34px, var(--marigold) 34px 52px,
+    var(--indigo) 52px 86px, var(--jade) 86px 104px, var(--paper) 104px 110px);}
+  .sash.thin{height:5px; max-width:120px; margin:6px 0 22px;}
+  main{max-width:740px; margin:0 auto; padding:0 22px 80px;}
+  header.hero{padding:44px 0 8px;}
+  .kicker{font-family:-apple-system,'Segoe UI',sans-serif; text-transform:uppercase;
+    letter-spacing:.18em; font-size:12px; font-weight:700; color:var(--cochineal); margin:0 0 10px;}
+  h1{font-size:clamp(32px,6vw,46px); line-height:1.1; margin:0 0 12px; font-weight:700;}
+  h2{font-size:clamp(25px,4.5vw,33px); line-height:1.15; margin:60px 0 4px;}
+  h3{font-size:21.5px; margin:36px 0 8px;}
+  h4{font-family:-apple-system,'Segoe UI',sans-serif; font-size:14px; text-transform:uppercase;
+    letter-spacing:.12em; color:var(--jade); margin:30px 0 8px;}
+  .standfirst{font-size:19px; color:#4A4E5A; margin:0 0 26px; max-width:60ch; font-style:italic;}
+  p{margin:0 0 17px;}
+  .datechip{font-family:-apple-system,'Segoe UI',sans-serif; display:inline-block;
+    background:var(--indigo); color:#fff; font-size:12.5px; font-weight:700; letter-spacing:.06em;
+    padding:3px 12px; border-radius:999px; margin:0 0 8px; text-transform:uppercase;}
+  .datechip.jade{background:var(--jade);} .datechip.red{background:var(--cochineal);}
+  .summary{background:var(--soft); border-radius:10px; padding:26px 26px 14px; margin:34px 0 8px;
+    font-family:-apple-system,'Segoe UI',sans-serif; font-size:16px;}
+  .summary h2{margin-top:0; font-size:24px; font-family:Georgia,serif;}
+  .summary ul{margin:0 0 14px; padding-left:20px;} .summary li{margin-bottom:9px;}
+  table{width:100%; border-collapse:collapse; margin:22px 0; font-size:15px;
+    font-family:-apple-system,'Segoe UI',sans-serif;}
+  th{text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.08em;
+    color:#fff; background:var(--indigo); padding:10px 12px;}
+  td{padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  tr:nth-child(even) td{background:#F4F1EA;}
+  figure{margin:28px 0;}
+  figure svg{width:100%; height:auto; display:block; border-radius:8px;}
+  figcaption{font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px;
+    color:#6A6E78; margin-top:9px; line-height:1.45;}
+  figcaption a{color:#6A6E78;}
+  /* Photo cards: show real photo in a full browser, fall back to a link card in the app */
+  .photocard{display:block; text-decoration:none; border:1px solid var(--line);
+    border-radius:10px; overflow:hidden; background:#fff; margin:26px 0;}
+  .photocard img{width:100%; height:auto; display:block;}
+  .photocard .pc-label{font-family:-apple-system,'Segoe UI',sans-serif; padding:12px 16px;
+    font-size:14px; color:var(--indigo); font-weight:600;}
+  .photocard .pc-label span{color:#6A6E78; font-weight:400; display:block; font-size:12.5px; margin-top:2px;}
+  .town{border:1px solid var(--line); border-radius:10px; padding:22px 24px 10px; margin:22px 0; background:#fff;}
+  .town h3{margin-top:0;}
+  .town .meta{font-family:-apple-system,'Segoe UI',sans-serif; font-size:13px; font-weight:700;
+    color:var(--jade); text-transform:uppercase; letter-spacing:.07em; margin:0 0 12px;}
+  .callout{border-left:4px solid var(--marigold); background:#F8F3E7; padding:16px 20px;
+    border-radius:0 8px 8px 0; margin:24px 0; font-size:16.5px;}
+  .callout strong{color:var(--cochineal);}
+  .storybreak{display:flex; align-items:center; gap:14px; margin:40px 0 26px;}
+  .storybreak .glyph{flex:0 0 auto;}
+  .storybreak .rule{flex:1; height:1px; background:var(--line);}
+  .storybreak .bookno{font-family:-apple-system,'Segoe UI',sans-serif; font-size:12px;
+    letter-spacing:.2em; text-transform:uppercase; color:var(--cochineal); font-weight:700;}
+  dl{margin:0;} dt{font-weight:700; margin-top:14px;} dd{margin:2px 0 0 0; color:#434752;}
+  .toc{font-family:-apple-system,'Segoe UI',sans-serif; font-size:15.5px; margin:26px 0 6px;
+    padding:0; list-style:none;}
+  .toc li{margin-bottom:7px;}
+  .toc a{color:var(--indigo); text-decoration:none; font-weight:600; border-bottom:1px solid var(--line);}
+  .toc .sub{margin-left:18px; font-weight:400; font-size:14.5px;}
+  .footnote{font-family:-apple-system,'Segoe UI',sans-serif; font-size:14px; color:#6A6E78;
+    margin-top:46px; border-top:1px solid var(--line); padding-top:18px;}
+  @media print{
+    h2,h3,h4{break-after:avoid; page-break-after:avoid;}
+    figure,.town,.summary,.callout,table,.photocard{break-inside:avoid; page-break-inside:avoid;}
+    .sash{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+<div class="sash" aria-hidden="true"></div>
+<main>
+
+<header class="hero">
+  <p class="kicker">Guatemala &amp; Belize · August 6 to 17</p>
+  <h1>Three Layers of Time</h1>
+  <p class="standfirst">A cultural companion for your trip: the full story of the Popol Vuh, the Maya calendar explained properly, and the lake towns in depth. The route moves through three overlapping worlds: the ancient Maya, the Spanish colony built on top of them, and the living Maya communities who carry both forward.</p>
+  <ul class="toc">
+    <li><a href="#skim">The five minute version</a></li>
+    <li><a href="#popol">The Popol Vuh, retold in full</a></li>
+    <li class="sub"><a href="#book1">Book One: The failed creations</a></li>
+    <li class="sub"><a href="#book2">Book Two: The fall of Seven Macaw</a></li>
+    <li class="sub"><a href="#book3">Book Three: The Hero Twins in Xibalba</a></li>
+    <li class="sub"><a href="#book4">Book Four: The people of maize</a></li>
+    <li><a href="#calendar">The Maya calendar, explained</a></li>
+    <li><a href="#towns">The Lake Atitlán towns, in depth</a></li>
+    <li><a href="#context">Antigua and Tikal</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+  </ul>
+</header>
+
+<!-- Built-in illustration: Lake Atitlan map -->
+<figure>
+<svg viewBox="0 0 760 430" role="img" aria-label="Illustrated map of Lake Atitlan and its towns">
+  <rect width="760" height="430" fill="#EFEBE2"/>
+  <!-- lake body -->
+  <path d="M110,150 C150,95 260,75 350,90 C430,102 520,85 590,115 C660,145 680,205 640,255
+           C610,292 560,300 530,330 C500,360 430,372 370,355 C310,338 280,350 230,330
+           C170,306 120,270 100,220 C88,190 92,175 110,150 Z"
+        fill="#7FA8C4" stroke="#4A7FA5" stroke-width="3"/>
+  <path d="M130,165 C170,115 265,95 348,108 C425,120 515,103 578,130 C640,156 655,205 620,248
+           C593,281 550,290 522,318 C494,344 432,355 375,340 C318,325 285,336 240,318
+           C186,296 140,264 122,220 C112,193 115,183 130,165 Z"
+        fill="#93B9D2" opacity="0.7"/>
+  <!-- volcanoes -->
+  <g stroke="#5A4632" stroke-width="2" fill="#8A6E4E">
+    <path d="M300,415 L370,330 L440,415 Z"/>
+    <path d="M455,415 L520,340 L585,415 Z"/>
+    <path d="M575,415 L650,325 L725,415 Z"/>
+  </g>
+  <g fill="#EFEBE2"><path d="M355,349 L370,330 L385,349 L370,342 Z"/>
+    <path d="M506,357 L520,340 L534,357 L520,350 Z"/>
+    <path d="M634,344 L650,325 L666,344 L650,336 Z"/></g>
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#5A4632" font-weight="600">
+    <text x="336" y="408">V. San Pedro</text>
+    <text x="486" y="408">V. Tolimán</text>
+    <text x="618" y="408">V. Atitlán</text>
+  </g>
+  <!-- shore ownership arcs -->
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="12.5" font-weight="700">
+    <text x="330" y="52" fill="#2C3E6B" letter-spacing="2">KAQCHIKEL SHORE</text>
+    <text x="150" y="392" fill="#2F7D6D" letter-spacing="2">TZ'UTUJIL SHORE</text>
+  </g>
+  <!-- towns -->
+  <g font-family="-apple-system,'Segoe UI',sans-serif">
+    <circle cx="560" cy="120" r="9" fill="#2C3E6B" stroke="#fff" stroke-width="2.5"/>
+    <text x="575" y="115" font-size="15" font-weight="700" fill="#22252E">Panajachel</text>
+    <text x="575" y="132" font-size="12" fill="#555">your base · gateway town</text>
+
+    <circle cx="150" cy="240" r="9" fill="#2F7D6D" stroke="#fff" stroke-width="2.5"/>
+    <text x="30" y="228" font-size="15" font-weight="700" fill="#22252E">San Juan</text>
+    <text x="30" y="245" font-size="12" fill="#555">weaving co-ops,</text>
+    <text x="30" y="260" font-size="12" fill="#555">natural dyes, murals</text>
+
+    <circle cx="205" cy="305" r="9" fill="#2F7D6D" stroke="#fff" stroke-width="2.5"/>
+    <text x="95" y="315" font-size="15" font-weight="700" fill="#22252E">San Pedro</text>
+    <text x="83" y="332" font-size="12" fill="#555">backpacker hub</text>
+
+    <circle cx="460" cy="322" r="9" fill="#2F7D6D" stroke="#fff" stroke-width="2.5"/>
+    <text x="420" y="352" font-size="15" font-weight="700" fill="#22252E">Santiago Atitlán</text>
+    <text x="420" y="369" font-size="12" fill="#555">Maximón · old Tz'utujil capital</text>
+
+    <circle cx="255" cy="128" r="6.5" fill="#2C3E6B" stroke="#fff" stroke-width="2"/>
+    <text x="180" y="118" font-size="12.5" fill="#555">San Marcos</text>
+    <circle cx="620" cy="245" r="6.5" fill="#2C3E6B" stroke="#fff" stroke-width="2"/>
+    <text x="632" y="250" font-size="12.5" fill="#555">Santa Catarina</text>
+  </g>
+  <!-- boat route -->
+  <path d="M560,132 C440,190 260,200 165,238 M165,245 C175,272 190,290 200,298 M212,308 C300,330 390,330 450,322"
+        fill="none" stroke="#9E2B3B" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#9E2B3B" font-weight="700">
+    <text x="300" y="185">Aug 10 boat route</text>
+  </g>
+</svg>
+<figcaption>Lake Atitlán and its towns. The lake fills a volcanic caldera left by a colossal eruption roughly 84,000 years ago. Not to scale.</figcaption>
+</figure>
+
+<!-- ============ SKIMMABLE SUMMARY ============ -->
+<section id="skim" class="summary">
+  <h2>The Five Minute Version</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+  <ul>
+    <li><strong>The big picture:</strong> the Maya built one of the world's great civilizations here (Tikal was its superpower city), the Spanish conquered the region in the 1520s and ruled from Antigua, and the two cultures fused rather than one replacing the other. That fusion is what you will see everywhere in the highlands.</li>
+    <li><strong>The Popol Vuh</strong> is the K'iche' Maya creation epic in four movements: the gods' three attempts to make humans (mud fails, wood fails, maize succeeds), the destruction of the arrogant false sun Seven Macaw, the Hero Twins' descent into the underworld to defeat death itself, and the history of the K'iche' people down to the Spanish conquest. The oldest surviving copy was written down in Chichicastenango, the town you visit Aug 9. The full retelling is below.</li>
+    <li><strong>The Maya calendar</strong> is three interlocking systems: a 260 day sacred count (tzolk'in) still used daily by Maya day keepers in the towns you are visiting, a 365 day solar year (haab) whose 18 months are the reason the Chichicastenango church has 18 steps, and the Long Count that dates history from a creation day in 3114 BC.</li>
+    <li><strong>The lake towns</strong> each belong to a distinct Maya people. Panajachel (your hotel base) is the Kaqchikel gateway. San Juan is the tidy Tz'utujil arts town famous for natural dye weaving. San Pedro is its scruffy backpacker sibling. Santiago is the largest and most traditional, old capital of the Tz'utujil kingdom and home of the folk saint Maximón.</li>
+  </ul>
+  <table>
+    <tr><th>Date</th><th>Where</th><th>One thing to know</th></tr>
+    <tr><td>Aug 6-8</td><td>Antigua</td><td>Colonial capital of Central America until earthquakes wrecked it in 1773. Fuego volcano still smokes on the skyline.</td></tr>
+    <tr><td>Aug 9</td><td>Chichicastenango</td><td>Home of the Popol Vuh manuscript. Maya ritual on the church steps, Catholic mass inside. Aug 9 is a Sunday, the big market day.</td></tr>
+    <tr><td>Aug 9-11</td><td>Lake Atitlán</td><td>Every town has its own Maya language variant and traditional dress. Morning water is calm; the afternoon wind (Xocomel) makes crossings choppy.</td></tr>
+    <tr><td>Aug 12</td><td>Tikal</td><td>Capital of a Maya superpower. Temple I is a king's tomb and a victory monument. Star Wars filmed here.</td></tr>
+    <tr><td>Aug 14-17</td><td>Belize (Caye Caulker)</td><td>Former British colony: English, Creole culture, Caribbean pace, and the second largest barrier reef on Earth.</td></tr>
+  </table>
+</section>
+
+<!-- ============ POPOL VUH FULL RETELLING ============ -->
+<section id="popol">
+  <h2>The Popol Vuh, Retold in Full</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+  <p><span class="datechip red">Pays off Aug 9 · Chichicastenango</span> <span class="datechip">and Aug 12 · Tikal</span></p>
+
+  <p>First, how this book survived at all. The stories of the Popol Vuh are ancient; scenes from them appear painted on Maya vases made in Tikal's era, more than a thousand years before the book was written. After the Spanish conquest, when missionaries were burning Maya books by the armload, K'iche' nobles secretly wrote the epic out in their own language using the Roman alphabet, probably in the 1550s, near the ruined K'iche' capital of Q'umarkaj. Around 1701, a Dominican priest named Francisco Ximénez, stationed in Chichicastenango, was quietly shown the manuscript by his parishioners. Instead of destroying it, he copied it and added a Spanish translation. His copy, made in the very town you visit on August 9, is the oldest that survives. It now sits in the Newberry Library in Chicago. Everything below follows his text.</p>
+
+  <p>The name means "Book of the Mat," the woven mat being the seat of council where leaders sat, so a fair translation is "Book of the Council" or "Book of the People." Keep one image in mind as you read: for the Maya, the world has three levels. The heavens above, the earth's surface (pictured as the back of a great crocodile floating in the sea), and below it Xibalba, "the place of fright," reached through caves and still water. The great pyramids you will climb at Tikal are artificial sacred mountains connecting all three.</p>
+
+  <div class="storybreak">
+    <svg class="glyph" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+      <rect x="1" y="1" width="44" height="44" fill="#2C3E6B" rx="4"/>
+      <path d="M10 32 L10 22 L16 22 L16 16 L22 16 L22 10 L36 10 L36 32 Z" fill="#D9A13D"/>
+    </svg>
+    <span class="bookno">Book One</span>
+    <div class="rule"></div>
+  </div>
+
+  <h3 id="book1">The Failed Creations</h3>
+
+  <p>In the beginning there is nothing but stillness: an empty sky above and a calm sea below, silent, unmoving, in darkness. Within the water, wrapped in quetzal feathers, lies the Sovereign Plumed Serpent, Q'uq'umatz. In the sky lives Heart of Sky, also called Huracán, "One Leg," a storm god in three aspects: Thunderbolt Huracán, Newborn Thunderbolt, and Sudden Thunderbolt. (His name, passed through Taíno and Spanish, is where our word hurricane comes from.)</p>
+
+  <p>The gods meet in the darkness and talk. That is the whole method of creation in the Popol Vuh, and it matters: the world is talked into being. "Earth," they say, and the earth rises from the sea like a cloud, mountains unfolding, cypress and pine appearing on the slopes, rivers threading between the hills. They are pleased, but the world is silent, and silence is the problem they set out to solve. The gods do not want scenery. They want beings who can speak their names, praise them, and keep count of the days. The entire epic is driven by this single wish: the gods are lonely for language.</p>
+
+  <p>So they make the animals: deer, birds, jaguars, serpents, each given its home, the deer to the ravines, the birds to the branches. "Speak our names," the gods say. "Pray to us." But the animals can only squawk, howl, and hiss, each in its own way. It is not speech. The gods demote them on the spot: because you cannot speak, they say, you will be eaten. Your flesh will serve. This is the Maya explanation for why animals are prey, and it sets the pattern for everything that follows. In this cosmology, the purpose of humanity is to speak, to remember, and to keep the calendar. Beings that cannot do this are unfinished drafts.</p>
+
+  <p>The gods try again, this time shaping a body from mud. It is a disaster. The mud person's face slumps to one side, it dissolves in water, it speaks but its words are mindless mush, and it cannot turn its head or reproduce. The gods let it crumble away. Lesson one: flesh alone is not enough.</p>
+
+  <p>For the third attempt they consult the divine grandparents, Xpiyacoc and Xmucane, the oldest beings in existence, matchmaker and midwife, the first day keepers. The grandparents cast lots with corn kernels and coral seeds, counting the days of the tzolk'in calendar to divine the answer, which tells you how deep the calendar runs in this culture: even the gods consult it. The count says: make them of wood. So the gods carve manikins, men of coral wood and women of reeds. These are much better. They walk, they talk, they multiply, they populate the earth with houses and villages.</p>
+
+  <p>But there is nothing in them. They have no blood, no sweat, and, fatally, no memory. They do not remember who made them, never pray, never keep the days. Their faces are dry and crusty, their limbs stiff. So Heart of Sky sends a flood of dark rain, and then the world itself turns on the wooden people in one of the most vivid scenes in world mythology. Their own dogs speak: "You never fed us, you chased us with sticks. Now you will taste our teeth." Their turkeys say the same. Their grinding stones rise up: "Day after day you ground us down, r-r-rip, r-r-rip, on our faces. Now it is your turn." Their cooking pots and griddles say: "You burned us, you blackened our mouths with soot. Now we will burn you." The furniture of daily life takes its revenge. The wooden people scramble onto their roofs, and the roofs collapse; into the trees, and the trees throw them off; into caves, and the caves slam shut. The few that escape become the forest monkeys, which is why, the book says, monkeys look like people: they are the leftovers of a failed draft of humanity.</p>
+
+  <div class="callout"><strong>Why this matters on your trip:</strong> the moral of the wooden people, that beings who take without gratitude get destroyed by the very things they used, is still a living ethic in highland Maya communities, where reciprocity with the land, the maize, and the ancestors structures ceremony. When you see offerings burned at Chichicastenango, gratitude and remembrance are what is being performed.</div>
+
+  <div class="storybreak">
+    <svg class="glyph" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+      <rect x="1" y="1" width="44" height="44" fill="#9E2B3B" rx="4"/>
+      <circle cx="23" cy="20" r="9" fill="#D9A13D"/>
+      <path d="M23 29 L15 40 L31 40 Z" fill="#D9A13D"/>
+    </svg>
+    <span class="bookno">Book Two</span>
+    <div class="rule"></div>
+  </div>
+
+  <h3 id="book2">The Fall of Seven Macaw</h3>
+
+  <p>Between the flood and the making of true people, the world is still dim, lit by neither sun nor moon, and into this twilight struts one of literature's great blowhards: Vucub Caquix, Seven Macaw. He is a monstrous bird with metal eyes and jeweled teeth that glitter, and because he shines in the darkness he declares himself the sun and the moon. "I am the light. My eyes are silver. My teeth glitter like the face of the sky." He is not the sun. He is a bird with good dental work. But in a dark world, glitter passes for light, and false grandeur is exactly the kind of disorder that must be cleared away before real people can exist.</p>
+
+  <p>Enter, for the first time, the Hero Twins: Hunahpú and Xbalanqué. (Their full story comes in Book Three; the Popol Vuh tells events out of order, like any good epic.) The twins are young, clever, and armed with blowguns. They decide the false sun has to go. They know Seven Macaw climbs a nance tree each day to eat its fruit, so they hide beneath it, and when he settles into the branches Hunahpú shoots him in the jaw with a blowgun pellet. Seven Macaw crashes down, screaming, but as Hunahpú rushes in, the great bird tears his arm off and carries it home, hanging it over his fire.</p>
+
+  <p>Now comes the trick, and tricks, not strength, are how everything gets done in this book. The twins recruit the divine grandparents themselves, who disguise themselves as a humble old couple, wandering healers whose specialty, they announce, is pulling worms from teeth. The twins tag along posing as their orphaned grandchildren. Seven Macaw, his jaw shattered and aching, calls them in. "What can you cure?" "Toothache, your lordship." He begs them to fix his mouth. "Ah," says the old healer, peering in, "the trouble is a worm. The teeth must come out." Seven Macaw hesitates. His teeth are his glory. "But without my teeth, what kind of lord will I be?" "We will replace them with ground bone," they promise. The "ground bone" is white corn kernels. Out come the jeweled teeth, in go the corn, and while they are at it they pluck out his shining metal eyes too. His splendor gone, Seven Macaw simply dies, deflated. The grandparents take back Hunahpú's arm and reattach it. The book pauses to state the moral plainly: this is what happens to those who magnify themselves. Pride shines in the dark only until someone turns on the light.</p>
+
+  <p>Seven Macaw has two sons, giants both, and they inherit his vanity. The elder, Zipacná, makes mountains, carrying them on his back in a single night. He meets four hundred boys dragging a huge log to be the beam of their hut, and carries it alone, so the boys, alarmed by his strength, plot to kill him: they dig a great post hole and ask him to climb down into it, planning to crush him with the log. Zipacná overhears, hides in a side tunnel, survives the log, and even lets them believe he is dead; ants carry out his hair and nail clippings as evidence. On the third day, while the four hundred boys drunkenly celebrate in their new hut, Zipacná rises beneath it and brings it down, killing them all. The book says the four hundred boys rose into the sky as the Pleiades star cluster, which the Maya watched to time the planting year. The Hero Twins avenge them with a trick built from Zipacná's appetite: they carve a fake crab, so lifelike it gleams, and wedge it deep in a canyon cave under a mountain. Zipacná, always hungry, crawls in after it, and the twins drop the mountain on him. The mountain-maker becomes a mountain's foundation, turned to stone.</p>
+
+  <p>The younger son, Cabracán, "Earthquake," spends his days demolishing mountains, shaking them until they crumble. The twins invite him to a marvelous new mountain in the east, taller than any he has toppled, and along the way they shoot birds with their blowguns and roast them. One bird they prepare specially, coating it with white earth, with plaster. Cabracán, famished from the walk, devours the plastered bird, and the earth in it undoes his strength. When they reach the mountain he cannot so much as make it tremble. The twins bind him and bury him. Earth defeats the earthquake.</p>
+
+  <p>With the false sun and his sons gone, the stage is clear. But before real people can be made, death itself has to be humbled, and for that story the book rewinds a generation.</p>
+
+  <div class="storybreak">
+    <svg class="glyph" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+      <rect x="1" y="1" width="44" height="44" fill="#1A2233" rx="4"/>
+      <circle cx="16" cy="23" r="7" fill="#D9A13D"/>
+      <circle cx="30" cy="23" r="7" fill="#EFEBE2"/>
+    </svg>
+    <span class="bookno">Book Three</span>
+    <div class="rule"></div>
+  </div>
+
+  <h3 id="book3">The Hero Twins in Xibalba</h3>
+
+  <h4>The fathers</h4>
+  <p>The divine grandparents, Xpiyacoc and Xmucane, have two sons: One Hunahpú and Seven Hunahpú. The brothers love one thing above all: the ballgame. They play all day on their court, rattling the great stone playing alley with the thump of the rubber ball. (You will stand in courts exactly like it at Tikal. The game was played with a solid rubber ball, struck with hips and forearms, and it carried enormous ritual weight: the ball in flight was the sun crossing the sky, the sunken court was a crack into the underworld.) The noise of their game annoys the wrong audience. Directly below their court lie the lords of Xibalba, the underworld, and its two ruling lords, One Death and Seven Death, take the thumping overhead as disrespect. The lords of Xibalba are less gods of death than gods of misery; their lieutenants have names like Flying Scab, Blood Gatherer, Pus Demon, Jaundice Demon, Bone Scepter, and Packstrap, each responsible for a particular human suffering. They send owl messengers with an invitation: come down and play ball with us.</p>
+
+  <p>The brothers descend, and everything is a trap. The road to Xibalba crosses rushing canyons, a river of scorpions, a river of blood, a river of pus, and then reaches a crossroads of four colored roads, red, white, yellow, and black, where the Black Road speaks: "Take me. I am the lord's road." It is a lie. At the Xibalban court they greet the seated lords politely, and the two figures they address turn out to be carved wooden dummies, and the assembled lords howl with laughter at them. Offered a bench, they sit, and it is a scorching-hot stone slab, and the lords laugh harder. The final test is the House of Darkness: they are given a torch and two cigars and told to return them at dawn exactly as given, still lit, unconsumed. It cannot be done. They burn them up, fail, and are sacrificed. The lords bury them beneath the ballcourt floor, but first they cut off One Hunahpú's head and set it in the fork of a dead tree beside the road. Instantly the tree fruits, gourds crowding every branch, the head indistinguishable among them, and Xibalba, unsettled, forbids anyone to approach it.</p>
+
+  <h4>Blood Moon</h4>
+  <p>A young Xibalban woman named Xquic, Blood Moon, daughter of the lord Blood Gatherer, hears about the forbidden tree and goes to look, because forbidding a thing is the surest way to make a curious person visit it. "Would I die if I picked one?" she wonders aloud. The skull of One Hunahpú speaks from the branches: "What you see is only bone. But hold out your hand." She does, and the skull spits into her palm. "In my saliva I have given you my descendants," the skull says. "The father never truly dies; he lives on in his children." She is pregnant with the twins.</p>
+
+  <p>When her father notices, Xibalban law demands her sacrifice, and four owls are ordered to bring back her heart in a bowl. She talks them out of it. In place of her heart they carry back the congealed red sap of the cochineal croton tree, which the lords burn as a heart, and find the smoke sweet. (Note the trick: a plant's red sap passes for blood. Remember this when you watch cochineal red dye being made in San Juan La Laguna. Red, blood, and sacrifice are one braided idea in Maya thought, and the dye you will see is part of it.) The owls, converted, lead Blood Moon up to the earth's surface, where she presents herself, pregnant and unknown, at the house of her mother-in-law Xmucane.</p>
+
+  <p>The old grandmother does not believe her for a second. Her test: "Go harvest a netful of corn from the garden." The garden holds a single corn plant. Blood Moon stands before the lone plant and prays to the guardians of food, pulls the corn silk from one ear, and the silk multiplies into a full net of corn, so heavy the animals of the field have to help carry it. Xmucane sees the sign and accepts her. The twins, Hunahpú and Xbalanqué, are born soon after, squalling so loudly that the grandmother throws them out of the house, so they grow up outdoors, on the mountain, in the trees, hunting with blowguns, hardy and half wild.</p>
+
+  <h4>The monkey brothers and the found equipment</h4>
+  <p>There are older half-brothers in the house, One Monkey and One Artisan, sons of One Hunahpú from before. They are gifted, flautists, singers, writers, carvers, and they are jealous, bullying the twins from birth, taking their food, making them sleep on ant hills. The twins bide their time, then invite the brothers to climb a tree to fetch birds they have shot. The tree grows beneath the brothers as they climb, stranding them in the canopy. "Loosen your loincloths and let the ends hang, you will climb better," call the twins. The trailing cloth becomes tails; the brothers become monkeys. The twins give the grandmother four chances to see her elder grandsons again, warning her not to laugh, and four times the monkeys' pinched faces and swinging bellies make her laugh until the monkeys flee for good. The book is fair to them: One Monkey and One Artisan became the patron gods of artists, musicians, and scribes, honored by carvers ever after. In Maya art the scribe gods are drawn as monkeys.</p>
+
+  <p>The twins take over the household farming, badly and hilariously (their tools work by themselves while they hunt, and each night the animals put the cleared forest back, until they catch the rat responsible). The rat, in exchange for its life, reveals the family secret: their father's ballgame equipment, ball, yokes, and pads, hangs hidden in the rafters, where the grandmother concealed it hoping the game would die with her sons. The twins trick her out of the house and take down the gear. The thumping begins again over Xibalba's roof. The lords below hear it and are furious: "Who is playing again over our heads? Did the first two not die?" The owls fly up with a second summons. The grandmother receives it and, heartbroken, passes the message through a louse, which is swallowed by a toad, which is swallowed by a snake, which is swallowed by a falcon, who delivers the whole nested chain to the twins at their ballcourt, a little Russian doll of messengers that the book plays for comedy in the middle of gathering dread.</p>
+
+  <h4>The descent</h4>
+  <p>The twins go down the same road that killed their father, and this is the heart of the epic: the same trials, faced with preparation instead of pride. At the crossroads they send ahead a mosquito, which bites each seated lord in turn. The wooden dummies say nothing when bitten, exposed at once, and as each real lord flinches and yelps, his neighbor names him: "Ow!" "What is it, One Death?" and so down the whole bench, until the mosquito has collected every lord's name. Names are power. When the twins arrive they greet each lord correctly, by name, decline the hot bench politely ("that seat is for cooking"), and the laughter dies in Xibalba's throat.</p>
+
+  <p>Then come the test houses, one per night, between days of ballplay that the twins hold even. In the <strong>House of Darkness</strong> they are given the impossible torch and cigars, and solve them: they tip the torch with a macaw's red tail feathers and cap the cigars with fireflies, so the lights appear to burn all night and are handed back whole at dawn. In the <strong>House of Blades</strong>, filled with knives that move by themselves, they speak to the knives and promise them the flesh of animals as their proper portion, and the blades still. In the <strong>House of Cold</strong>, rattling with hail, they shut out the drafts and outlast the ice. In the <strong>House of Jaguars</strong> they scatter bones to the cats, who crunch contentedly on them while the lords, hearing the sound, celebrate too early. In the <strong>House of Fire</strong> they are merely toasted, not burned. The pattern is consistent and very Maya: nothing is overpowered; everything is negotiated, fed, or out-thought.</p>
+
+  <p>The <strong>House of Bats</strong> nearly ends everything. The killer bats of Camazotz, the death bat, shriek through the dark, and the twins sleep inside their blowguns for shelter. Near dawn, Hunahpú peeks out to check the sky, and a bat takes his head off. The head is hung over the ballcourt as Xibalba's game ball for the morning match. Xbalanqué does not panic. He calls the animals to him and asks each what it eats, and the coati arrives rolling a large squash. Through the night, Xbalanqué carves the squash into a head and sets it on his brother's shoulders. At the game, he knocks the ball, his brother's real head, out of the court, where a waiting rabbit bounds away in its place, drawing off the pursuing lords while Xbalanqué swaps the real head back and the squash onto the court. The squash splits on the stones, scattering seeds, and Xibalba realizes it has been playing ball with a vegetable. Whole again, the twins finish the game on even terms.</p>
+
+  <h4>Death, resurrection, and the great reversal</h4>
+  <p>The lords, out of houses and out of patience, build an enormous stone oven and invite the twins to jump it, a challenge with no honest version. The twins already know, having consulted two seers, exactly what must happen and what must be done with their remains. They do not wait to be pushed. They turn, face each other, join hands, and dive into the fire together. Xibalba erupts in celebration. Following the seers' planted advice, the lords grind the twins' burned bones like corn flour and pour the powder into the river, which is precisely the wrong thing to do to corn, which sprouts. On the fifth day the twins reappear, first as catfish in the river, then as two ragged vagabond dancers, orphan magicians who perform miracles for the poor of Xibalba: they burn down houses and restore them, sacrifice a dog and revive it, and finally one twin cuts the other apart and raises him whole.</p>
+
+  <p>Word of the resurrection act reaches One Death and Seven Death, who summon the shabby dancers to court and demand the full show. Dog killed and revived: delight. House burned and restored: delight. Then the lords, giddy, ask for a human sacrifice, and the twins oblige, cutting out a man's heart and reviving him. The lords are beside themselves. "Do it to us!" they cry. "Sacrifice us!" So the twins sacrifice One Death, and do not revive him. Seven Death, suddenly understanding, begs, and is dispatched as well, without dignity. The twins reveal themselves, and the remaining lords of Xibalba surrender.</p>
+
+  <p>The twins do not destroy the underworld; they demote it. Their sentence: Xibalba will no longer receive the great and the innocent, no more clean blood, no more ballgame tribute. Its lords may keep only the guilty, the violent, the wretched, and their offerings will be sap and scraps, not human hearts. Death is not abolished, but it is limited, put in its place, made survivable in the way that matters: it can be met with preparation and wit rather than terror. The twins retrieve and honor their father and uncle at the old ballcourt, promising them they will be remembered and invoked, and then climb into the sky, where one becomes the sun and the other the moon. The four hundred boys killed by Zipacná rise with them as the Pleiades. The sky is finally lit, and the world is ready for people.</p>
+
+  <div class="callout"><strong>At Tikal:</strong> there are seven ballcourts at the site, including a rare triple court. After this story you know what the game meant: every match echoed the twins' match against death. And the great funerary pyramids follow the same logic as the twins' oven and river: the dead king is planted like a seed, with the expectation of sprouting. Temple I's king, Jasaw Chan K'awiil, was buried with jade, the color of new corn.</div>
+
+  <div class="storybreak">
+    <svg class="glyph" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+      <rect x="1" y="1" width="44" height="44" fill="#2F7D6D" rx="4"/>
+      <path d="M23 8 C27 14 27 18 23 24 C19 18 19 14 23 8 Z" fill="#D9A13D"/>
+      <path d="M23 24 L23 40 M15 30 C18 27 21 26 23 27 M31 30 C28 27 25 26 23 27" stroke="#EFEBE2" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span class="bookno">Book Four</span>
+    <div class="rule"></div>
+  </div>
+
+  <h3 id="book4">The People of Maize</h3>
+
+  <p>Now, at last, the gods try a fourth time. Four animals, the fox, the coyote, the parrot, and the crow, bring news of a mountain in the east called Paxil, "Split Place," filled with yellow corn and white corn. The grandmother Xmucane grinds the corn nine times, and from the meal, mixed with water she rinses from her hands, the gods shape four men: Jaguar Quitze, Jaguar Night, Not Right Now, and Dark Jaguar. No mother bears them and no father sires them; they are made, and they are perfect. They speak, they give thanks unprompted, they see everything: their sight passes through trees, through mountains, to the edges of the sky and the round of the earth.</p>
+
+  <p>And that is a problem. The gods confer nervously: "They see too much. They will not need us. They are as we are." So the gods breathe a mist over the four men's eyes, clouding them the way breath fogs a mirror, and human sight shrinks to what is nearby. In exchange, the gods make four wives for the four men, and the couples are the ancestors of all the K'iche' lineages. It is one of the most quietly profound moments in world scripture: human limitation is not a punishment for sin, as in Eden, but a design decision, the price of being loved by gods who wish to be needed. Wisdom, from now on, must be earned through the calendar, through divination, through effort, rather than simply seen.</p>
+
+  <p>The first people multiply in the darkness before dawn, and the book follows them east to a city called Tulan Zuyua, Seven Caves, Seven Canyons, where the nations receive their gods. The K'iche' receive Tohil, who gives them fire when all the peoples are freezing, though other nations must pledge tribute to share it. The tribes then migrate west through hardship, fasting and waiting through the long night, watching for the morning star. At last, on a mountaintop, the sun rises for the first time. The first dawn dries the muddy earth, and the moment it breaks, the animals sing, the people burn incense and weep with joy, and the old animal gods of the wild are turned to stone. If you want a single image to carry up the steps at Chichicastenango, use this one: people standing on a mountain in the highlands you are driving through, burning copal and waiting for first light. That is what the smoke on the church steps still reenacts.</p>
+
+  <p>The rest of Book Four becomes history. The lineages found the K'iche' kingdom, build the fortified capital of Q'umarkaj with its temples and its ballcourt, expand under the great king Q'uikab, and keep the sacred book itself as their "seeing instrument," consulted by lords who fasted and read it to govern. The final pages walk the dynasty right down into the author's present: the arrival of the Spanish under Pedro de Alvarado in 1524, the burning of Q'umarkaj, the execution of the last independent kings, and the quiet note that the original book is gone and this copy is written "amid the preaching of God," in hiding. Q'umarkaj's ruins lie a short distance from Chichicastenango, whose K'iche' families are the direct heirs of the people in the book. The manuscript's last caretakers before Ximénez were their ancestors.</p>
+
+  <p>One more thing, because it is the book's real ending: the maize. The Popol Vuh's final creation is not a metaphor to its people. In highland Maya thought, human flesh is corn, literally, since the body is built of it, meal by meal, from birth. When you pass the impossibly steep corn plots on the drive to Chichicastenango, planted on slopes a Seattle building inspector would condemn, you are looking at the descendants of Paxil mountain, and at the reason the grandmother ground her corn nine times.</p>
+</section>
+
+<!-- ============ CALENDAR ============ -->
+<section id="calendar">
+  <h2>The Maya Calendar, Explained</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+  <p><span class="datechip">Pays off Aug 9 &amp; Aug 12</span></p>
+
+  <p>The Maya ran three calendars at once, and each had one job. The 260 day tzolk'in kept sacred time. The 365 day haab kept the farming year. The Long Count kept history. Two of the three are still alive in the highlands you are visiting.</p>
+
+  <h3>The tzolk'in: the 260 day sacred count</h3>
+  <p>Picture two gears. The small gear carries the numbers 1 through 13. The large gear carries twenty named days: Imix, Ik', Ak'bal, K'an, Chikchan, Kimi, Manik', Lamat, Muluk, Ok, Chuwen, Eb, B'en, Ix, Men, K'ib', Kab'an, Etz'nab', Kawak, Ajaw. The gears turn together one tooth per day, so today might be 4 Ajaw and tomorrow is 5 Imix. Because 13 and 20 share no common factor, the same pairing only comes around again after 13 x 20 = 260 days.</p>
+
+  <figure>
+  <svg viewBox="0 0 760 360" role="img" aria-label="Diagram of the two interlocking gears of the tzolkin calendar">
+    <rect width="760" height="360" fill="#EFEBE2"/>
+    <!-- large gear: 20 day names -->
+    <g transform="translate(485,180)">
+      <circle r="150" fill="#2C3E6B"/>
+      <circle r="112" fill="#3A4E80"/>
+      <circle r="26" fill="#EFEBE2"/>
+      <g fill="#F5EFDF" font-family="-apple-system,'Segoe UI',sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">
+        <text x="0" y="-128">Imix</text>
+        <text x="41" y="-121">Ik'</text>
+        <text x="77" y="-99">Ak'bal</text>
+        <text x="106" y="-64">K'an</text>
+        <text x="124" y="-22">Chikchan</text>
+        <text x="126" y="24">Kimi</text>
+        <text x="111" y="68">Manik'</text>
+        <text x="80" y="104">Lamat</text>
+        <text x="42" y="127">Muluk</text>
+        <text x="0" y="136">Ok</text>
+        <text x="-42" y="127">Chuwen</text>
+        <text x="-80" y="104">Eb</text>
+        <text x="-111" y="68">B'en</text>
+        <text x="-126" y="24">Ix</text>
+        <text x="-124" y="-22">Men</text>
+        <text x="-106" y="-64">K'ib'</text>
+        <text x="-77" y="-99">Kab'an</text>
+        <text x="-41" y="-121">Etz'nab'</text>
+        <text x="-20" y="-95" font-size="11">Kawak</text>
+        <text x="20" y="-95" font-size="11">Ajaw</text>
+      </g>
+      <text x="0" y="6" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#2C3E6B" font-weight="700">20 DAYS</text>
+    </g>
+    <!-- small gear: 13 numbers -->
+    <g transform="translate(160,180)">
+      <circle r="105" fill="#9E2B3B"/>
+      <circle r="72" fill="#B24455"/>
+      <circle r="22" fill="#EFEBE2"/>
+      <g fill="#F5EFDF" font-family="-apple-system,'Segoe UI',sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+        <text x="0" y="-84">1</text><text x="41" y="-72">2</text><text x="72" y="-40">3</text>
+        <text x="86" y="5">4</text><text x="76" y="48">5</text><text x="46" y="77">6</text>
+        <text x="3" y="90">7</text><text x="-42" y="79">8</text><text x="-74" y="50">9</text>
+        <text x="-86" y="6">10</text><text x="-74" y="-38">11</text><text x="-42" y="-71">12</text>
+        <text x="0" y="-38" font-size="13">13</text>
+      </g>
+      <text x="0" y="5" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="10" fill="#9E2B3B" font-weight="700">13 NUMBERS</text>
+    </g>
+    <!-- meshing marks -->
+    <path d="M265,180 L335,180" stroke="#5A4632" stroke-width="3" stroke-dasharray="4 5"/>
+    <text x="300" y="165" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#5A4632" font-weight="600">turn together,</text>
+    <text x="300" y="205" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="12" fill="#5A4632" font-weight="600">one tooth per day</text>
+    <text x="380" y="30" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="14" fill="#22252E" font-weight="700">13 x 20 = 260 days before any pairing repeats</text>
+  </svg>
+  <figcaption>The tzolk'in as interlocking gears. A date is a number plus a day name, like 4 Ajaw or 8 B'atz'.</figcaption>
+  </figure>
+
+  <p>Each of the twenty days has a character, an energy, and a domain, somewhat the way other cultures treat birth signs, except the tzolk'in also assigns every person a day-spirit based on their birth date, called their nawal. The count governed naming, marriage matches, planting, and ceremony. Why 260? The honest answer is that no one is certain. The leading explanations: it is close to the human gestation period, it matches the interval between solar zenith passages at Maya latitudes, and it is the arithmetic marriage of the two most sacred numbers, 13 (levels of heaven) and 20 (fingers and toes, the whole human). Probably all three resonances kept it in use.</p>
+
+  <p>Here is the part worth carrying with you on August 9: <strong>this calendar has never stopped.</strong> In K'iche' towns like Chichicastenango and around the lake, specialists called aj q'ij, day keepers, still keep the 260 day count and perform ceremonies on the days that call for them. Every 260 days, on the day 8 B'atz', new day keepers are initiated in highland ceremonies. When you see men and women burning copal and candles on the church steps, you are not watching a revival or a show. You are watching an unbroken timekeeping tradition, older than the Roman calendar we use, being kept for its community that morning.</p>
+
+  <h3>The haab: the 365 day solar year</h3>
+  <p>The farming calendar: eighteen months of twenty days each (18 x 20 = 360), plus a leftover five day period called Wayeb, an uneasy, unlucky little month when the doors between worlds stood open and sensible people stayed close to home. Those eighteen months are the reason the church of Santo Tomás in Chichicastenango has exactly eighteen steps: the staircase, inherited from the Maya temple beneath the church, is the year itself, climbed to reach the sacred. Every 52 haab years, the tzolk'in and haab return to the same alignment, a cycle called the Calendar Round; a full date like "4 Ajaw 8 Kumk'u" repeats only once in 52 years, so for anything within living memory, that was date enough.</p>
+
+  <h3>The Long Count: the odometer of history</h3>
+  <p>For history beyond a lifetime, the Maya counted days from a fixed creation date, August 11, 3114 BC in our calendar, the day the Popol Vuh's gods set the world in order. The count is written like an odometer reading, five places:</p>
+
+  <figure>
+  <svg viewBox="0 0 760 260" role="img" aria-label="Diagram of a Maya Long Count date as an odometer">
+    <rect width="760" height="260" fill="#1A2233"/>
+    <text x="380" y="42" text-anchor="middle" fill="#EFEBE2" font-family="-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="700" letter-spacing="2">A LONG COUNT DATE: 9.15.10.0.0</text>
+    <g font-family="Georgia,serif" font-size="44" font-weight="700" text-anchor="middle">
+      <rect x="55" y="70" width="110" height="80" rx="8" fill="#2C3E6B"/><text x="110" y="125" fill="#D9A13D">9</text>
+      <rect x="185" y="70" width="110" height="80" rx="8" fill="#2C3E6B"/><text x="240" y="125" fill="#D9A13D">15</text>
+      <rect x="315" y="70" width="110" height="80" rx="8" fill="#2C3E6B"/><text x="370" y="125" fill="#D9A13D">10</text>
+      <rect x="445" y="70" width="110" height="80" rx="8" fill="#2C3E6B"/><text x="500" y="125" fill="#D9A13D">0</text>
+      <rect x="575" y="70" width="110" height="80" rx="8" fill="#2C3E6B"/><text x="630" y="125" fill="#D9A13D">0</text>
+    </g>
+    <g fill="#B9C0D0" font-family="-apple-system,'Segoe UI',sans-serif" font-size="12.5" text-anchor="middle" font-weight="600">
+      <text x="110" y="175">b'ak'tun</text><text x="110" y="192">394 years</text>
+      <text x="240" y="175">k'atun</text><text x="240" y="192">~20 years</text>
+      <text x="370" y="175">tun</text><text x="370" y="192">360 days</text>
+      <text x="500" y="175">winal</text><text x="500" y="192">20 days</text>
+      <text x="630" y="175">k'in</text><text x="630" y="192">1 day</text>
+    </g>
+    <text x="380" y="232" text-anchor="middle" fill="#EFEBE2" font-family="-apple-system,'Segoe UI',sans-serif" font-size="14.5">= AD 741, the date carved on the lintels of Tikal's Temple IV, the tallest pyramid you will see</text>
+  </svg>
+  <figcaption>The Long Count reads like an odometer of days since creation in 3114 BC. The date shown is a real one from Tikal.</figcaption>
+  </figure>
+
+  <p>Two Tikal connections make this concrete. Stela 29, found at Tikal, carries the oldest surviving Long Count date in the entire Maya lowlands, equivalent to AD 292, which is a large part of why archaeologists treat Tikal as the cradle of lowland dynastic history. And the twin pyramid complexes on your itinerary, Complex Q and Complex R, were each built to celebrate a k'atun ending, one architectural party every 20 years. Complex Q marks the k'atun ending of AD 771. When the calendar's odometer rolled a significant digit, Tikal built monuments the way we drop a ball in Times Square, except in limestone, at city scale.</p>
+
+  <p>As for the famous 2012 business: December 21, 2012 was simply the day the odometer completed its 13th b'ak'tun, rolling from 12.19.19.17.19 to 13.0.0.0.0. Thirteen b'ak'tuns is the same span the calendar assigned to the previous creation, so it was a resonant anniversary, and contemporary Maya communities marked it with ceremony, not with bunkers. The count continued the next morning, as it has every morning since.</p>
+</section>
+
+<!-- ============ LAKE TOWNS IN DEPTH ============ -->
+<section id="towns">
+  <h2>The Lake Atitlán Towns, In Depth</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+  <p><span class="datechip jade">Aug 9-11 · Boat tour Aug 10</span></p>
+
+  <p>Lake Atitlán fills a caldera left by one of the largest volcanic eruptions of the last hundred thousand years; the three younger volcanoes on its rim grew afterward inside the wreckage. Aldous Huxley called it the most beautiful lake in the world, "really too much of a good thing," but the human geography is the deeper story. The lake sits on a border between two Maya nations that were rivals long before the Spanish arrived: the <strong>Kaqchikel</strong>, whose kingdom lay north and east, and the <strong>Tz'utujil</strong>, whose kingdom held the south and west shore with its capital at Chuitinamit, on the slopes across the bay from present-day Santiago. When Pedro de Alvarado invaded in 1524, the Kaqchikel initially allied with the Spanish against their old Tz'utujil and K'iche' rivals, a decision they soon had cause to regret, and Alvarado crushed the Tz'utujil kingdom in a battle on the Santiago shore. Five centuries later, the language line still runs through the water: Kaqchikel towns on one side, Tz'utujil towns on the other, each with its own dress, patron saint, and temperament.</p>
+
+  <p>About that dress: traje, the traditional clothing worn daily (not as costume), is town-specific. A woman's huipil announces where she is from through its base color, stripe pattern, and embroidered figures, and reading huipiles is a skill locals exercise automatically. On your boat day, watch the huipiles change between towns separated by a ten minute ride. That is political and family identity, worn on the body, in a code that predates the conquest.</p>
+
+  <div class="town">
+    <h3>Panajachel ("Pana")</h3>
+    <p class="meta">Kaqchikel · Your hotel base Aug 9-11 · pop. roughly 12,000</p>
+    <p>Pana has been the lake's front door since a Franciscan mission was planted here in the 1500s, and its modern character arrived in the 1960s and 70s, when the hippie trail discovered it and never entirely left. It is the most commercial and least traditional town on the lake, which locals acknowledge with the affectionate nickname "Gringotenango." It earns its keep anyway. Calle Santander, the main street running down to the water, is one long textile and handicraft market drawing vendors from across the highlands, good for comparing regional styles in one walk. The lakefront promenade at the bottom has the classic three-volcano panorama, best at sunset when the Xocomel wind has scrubbed the sky. Your Aug 11 morning at the San Buenaventura Nature Reserve, with its butterfly enclosure and ziplines over the forest canopy, is in a private valley just west of town. Pana is also the lake's service hub, so it is where you will most clearly see all the lake's worlds in one place: Kaqchikel market families, foreign retirees, backpackers, and fleets of tuk tuks negotiating one narrow street.</p>
+  </div>
+
+  <div class="town">
+    <h3>San Juan La Laguna</h3>
+    <p class="meta">Tz'utujil · First stop on your Aug 10 boat tour · pop. roughly 10,000</p>
+    <p>The pride of the lake, and it knows it. San Juan is roughly 95 percent Tz'utujil and made a deliberate collective choice a generation ago to build a different tourism model from its neighbors: cooperative-owned, arts-led, alcohol-light, and swept clean to a degree that startles visitors arriving from anywhere else in Central America. The steep main street up from the dock is lined with murals painted on houses, telling Tz'utujil stories, festivals, and daily life; the town's painters developed a recognizable local style, often showing scenes from a bird's-eye or worm's-eye view, born from painters imagining the view of the volcano spirits or of the corn itself.</p>
+    <p>The weaving cooperatives you will visit are the heart of the visit. Women weave on the backstrap loom, a technology essentially unchanged for well over a thousand years: one end tied to a post, the other strapped around the weaver's lower back, her own body providing the tension. The cloth made this way is dense, warp-faced, and personal, sized to its maker. What sets San Juan apart is the natural dye revival: cooperatives here brought back pre-industrial dye recipes, and the demonstration is genuinely fascinating. Cochineal red comes from a scale insect raised on prickly pear cactus, crushed to give a crimson so valuable it was once colonial Guatemala's export treasure, and, as you now know from the Popol Vuh, red tree sap and insect red already stood in for blood in the oldest stories. Indigo gives blue, achiote gives orange, sacatinta leaves give blue-violet, avocado pits give warm pink, bark and marigolds fill out the browns and golds. If you buy textiles anywhere on this trip, buy them here, where the weaver is usually the person handing them to you. The town also runs a chocolate cooperative (cacao was Maya money; a turkey once cost 200 beans), coffee plots on the volcano slopes, and associations of traditional healers keeping the medicinal plant knowledge, all on your itinerary.</p>
+  </div>
+
+  <div class="town">
+    <h3>San Pedro La Laguna</h3>
+    <p class="meta">Tz'utujil · On the Aug 10 route · pop. roughly 13,000</p>
+    <p>Five minutes from San Juan and a world apart in temperament. San Pedro is the lake's backpacker capital: cheap Spanish schools (some of the best-value language immersion in the Americas), hostels, lakefront cafes, and the trailhead for Volcán San Pedro, the 3,020 meter cone looming directly overhead, a sweaty half-day climb through coffee and cloud forest. The town is really two towns stacked vertically. Down at the docks it is international, scruffy, and Anglophone; up the hill it is a hardworking Tz'utujil town where daily life carries on in Tz'utujil, and where evangelical Protestant churches have become a major presence, part of a religious transformation that has swept many lake and highland communities since the 1980s and reshaped festivals, drinking culture, and even traje customs. The instructive comparison with San Juan is unavoidable and worth making on purpose: two Tz'utujil towns, same lake, same ancestors, two completely different answers to what tourism should be.</p>
+  </div>
+
+  <div class="town">
+    <h3>Santiago Atitlán</h3>
+    <p class="meta">Tz'utujil · On the Aug 10 route (your itinerary calls it "Santiago La Laguna") · pop. roughly 50,000, the largest lake town</p>
+    <p>The heavyweight. Santiago sits in a bay between the Tolimán and San Pedro volcanoes, directly across the water from Chuitinamit, the pre-conquest Tz'utujil capital, and it has never stopped being the cultural center of the Tz'utujil world. Four things to know, in rising order of weight.</p>
+    <p><strong>The traje.</strong> Santiago's is among the most famous in Guatemala: men wear white-and-purple striped, knee-length embroidered trousers; women wear purple-striped huipiles embroidered with birds and flowers. On ceremonial occasions older women still wear the tocoyal, a 20 meter red band wound around the head into a flat halo, striking enough that it appears on Guatemala's 25 centavo coin.</p>
+    <p><strong>Maximón.</strong> The folk saint, called Rilaj Mam ("venerable grandfather") in Tz'utujil, is a fusion figure: part pre-Columbian earth deity, part St. Simon, part Judas, part Spanish landowner, wholly Santiago's own. His wooden effigy, draped in scarves and silk ties, a cigar in his mouth and a lit one usually going nearby, lives in a different family's house each year, moving every Holy Week, attended around the clock by a religious brotherhood called a cofradía. Visitors are welcome for a small contribution; offerings are cigars, aguardiente liquor, and money, and a shaman is usually present praying petitions on behalf of visitors. It is one of the most memorable rooms you can stand in anywhere in the Americas: candle smoke, incense, murmured Tz'utujil prayer, and a saint the official church never sanctioned but never managed to dislodge. The cofradía system itself is a story: a colonial Catholic institution the Maya quietly repurposed as a vessel for their own religion, hiding the old gods inside the saints' festivals.</p>
+    <p><strong>The church.</strong> The parish church of Santiago Apóstol, begun in the 1570s, contains altarpieces carved by local Tz'utujil sculptors that mix saints with maize and mountain imagery, and a memorial to Father Stanley Rother, the Oklahoma farm-boy priest who served Santiago for 13 years, translated the New Testament into Tz'utujil, refused to abandon his parish during the civil war terror ("the shepherd cannot run"), and was assassinated in the rectory in 1981. His heart, at the town's request, is buried in the church. He was beatified in 2017, the first US-born Catholic so honored.</p>
+    <p><strong>The resilience.</strong> Santiago suffered heavily during Guatemala's 36 year civil war. In December 1990, after soldiers shot 13 unarmed townspeople who had marched on the army base to protest abuses, the town gathered thousands of signatures and forced the army out entirely, the first community in Guatemala to expel the military, a landmark act of collective courage commemorated in the lakeside Peace Park. The warmth you will feel in Santiago sits on top of that history, not in ignorance of it.</p>
+  </div>
+
+  <a class="photocard" href="https://commons.wikimedia.org/wiki/File:Maximon_-_Lago_Atitlan.jpg">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maximon_-_Lago_Atitlan.jpg?width=600" alt="" onerror="this.style.display='none'">
+    <div class="pc-label">Photo: Maximón in Santiago Atitlán, attended by his cofradía
+      <span>Tap to view on Wikimedia Commons. (The photo also appears here when this file is opened in a web browser.)</span></div>
+  </a>
+
+  <div class="callout"><strong>Boat day tips:</strong> the Xocomel, "the wind that carries away sin," kicks up most afternoons and turns crossings choppy, which is why your tour starts at 8:00 sharp. Sit toward the back of the lancha if you mind spray. Small bills (5s and 10s of quetzales) make the co-op visits and Maximón's contribution easy. And ask before photographing people, especially elders in traje; a "puedo?" and a smile nearly always works.</div>
+</section>
+
+<!-- ============ ANTIGUA AND TIKAL ============ -->
+<section id="context">
+  <h2>Two Bookends: Antigua and Tikal</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+
+  <h3>Antigua's beautiful catastrophe</h3>
+  <p><span class="datechip red">Aug 6-8</span></p>
+  <p>Antigua was Santiago de los Caballeros de Guatemala, the Spanish capital of everything from Chiapas to Costa Rica, a city of universities, printing presses, and forty-odd churches. It is preserved today precisely because it was abandoned by power: the Santa Marta earthquakes of 1773 shattered it, and the crown ordered the capital moved to present-day Guatemala City. What remained, half ruin and half town, became the UNESCO site you will walk on Aug 7.</p>
+  <p>La Merced, on your route, tells the whole story in one facade. It was completed in 1767, six years before the quakes, by builders who had already learned the local lesson: its towers are short, its walls are massively thick, its proportions crouch. Architects call the style "seismic baroque." It survived. The facade's lemon-yellow ground with lace-like white stucco is the local ataurique style, and many art historians see indigenous hands and plant motifs woven into colonial stucco work like this, Maya artisans leaving their signature inside the conqueror's churches. Around the corner, its monastery courtyard holds one of the largest colonial fountains in the Americas, shaped as a water lily, which, if you want a flourish, was the Maya emblem of pure water and royal power at cities like Tikal. Your Aug 8 coffee visit at Finca la Azotea completes Antigua's other story: volcanic soil from Agua, Fuego, and Acatenango, the three cones ringing the valley, made this one of the world's great coffee terroirs. Fuego is genuinely active; a smoke puff on the skyline is normal and locally beloved.</p>
+
+  <a class="photocard" href="https://commons.wikimedia.org/wiki/File:La_Merced_Church_Antigua_Guatemala.jpg">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La_Merced_Church_Antigua_Guatemala.jpg?width=900" alt="" onerror="this.style.display='none'">
+    <div class="pc-label">Photo: La Merced, Antigua, completed 1767 in "seismic baroque"
+      <span>Tap to view on Wikimedia Commons. (Appears inline when opened in a web browser.)</span></div>
+  </a>
+
+  <h3>Tikal: the superpower in the forest</h3>
+  <p><span class="datechip">Aug 12</span></p>
+  <p>For most of the Classic period (roughly AD 250-900), the Maya world was organized around a cold war between two superpowers: Tikal, whose ancient name was Yax Mutal, and Calakmul, the Snake Kingdom, a hundred kilometers north. They fought through proxy cities, dynastic marriages, and shifting alliances for well over a century. Tikal took a catastrophic defeat in 562 and fell silent for 120 years, the "hiatus." Then in 682 a new king, Jasaw Chan K'awiil I, took the throne, and in 695 he captured and humbled Calakmul's lord, restoring Tikal to supremacy. Temple I, the Great Jaguar on your itinerary, is his funerary pyramid: a victory monument and a royal tomb in one, built about 732, with the king inside under a fortune in jade, the color of new maize, planted, as the Popol Vuh teaches, like a seed. Temple II across the plaza honors his queen. So when you stand in the Great Plaza you are standing inside a love story, a war memorial, and a resurrection machine simultaneously.</p>
+  <p>Scale, for calibration: the mapped city covers more than sixteen square kilometers with some 3,000 structures, the metropolitan population at peak is estimated anywhere from tens of thousands to over 100,000 depending on where you draw the line, and a 2018 lidar survey of the surrounding forest revealed roughly 60,000 previously unknown structures across the region, suggesting the Maya lowlands held millions of people. The city drank entirely from rainwater, stored in plastered reservoirs with sand-and-zeolite filtration systems, a genuinely advanced piece of water engineering. And then, between roughly 830 and 950, it all wound down: drought, deforestation, soil exhaustion, contaminated reservoirs, and the collapse of royal authority in some combination archaeologists still argue about. The forest took the city back for a thousand years. The Maya people, of course, did not vanish; their descendants are the six million Maya of Guatemala today, including everyone you met at the lake and in Chichicastenango. Two practical notes: the wildlife is half the show (howler monkeys sound like the underworld itself, and coatis and toucans are near-certain sightings), and yes, the view from Temple IV was Yavin 4 in the original Star Wars.</p>
+
+  <a class="photocard" href="https://commons.wikimedia.org/wiki/File:Tikal-Plaza-And-North-Acropolis.jpg">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tikal-Plaza-And-North-Acropolis.jpg?width=1000" alt="" onerror="this.style.display='none'">
+    <div class="pc-label">Photo: Tikal's Great Plaza and North Acropolis, the royal necropolis
+      <span>Tap to view on Wikimedia Commons. (Appears inline when opened in a web browser.)</span></div>
+  </a>
+
+  <a class="photocard" href="https://commons.wikimedia.org/wiki/File:Popol_vuh.jpg">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Popol_vuh.jpg?width=700" alt="" onerror="this.style.display='none'">
+    <div class="pc-label">Photo: the first page of the Popol Vuh manuscript, copied in Chichicastenango around 1701
+      <span>Tap to view on Wikimedia Commons. (Appears inline when opened in a web browser.)</span></div>
+  </a>
+</section>
+
+<!-- ============ GLOSSARY ============ -->
+<section id="glossary">
+  <h2>Glossary</h2>
+  <div class="sash thin" aria-hidden="true"></div>
+  <dl>
+    <dt>Huipil</dt><dd>Woman's woven blouse; colors and patterns identify her town. Sounds like "wee-PEEL."</dd>
+    <dt>Traje</dt><dd>Traditional dress as a whole, worn daily by many highland Maya, not as costume.</dd>
+    <dt>Backstrap loom</dt><dd>Portable loom tensioned by the weaver's own body, in continuous use since ancient times.</dd>
+    <dt>Cochineal</dt><dd>Crimson dye from a cactus-dwelling insect; once colonial Guatemala's export treasure. You will see it made in San Juan.</dd>
+    <dt>Cofradía</dt><dd>Religious brotherhood caring for a saint's image; a colonial institution the Maya repurposed to shelter their own religion.</dd>
+    <dt>Copal</dt><dd>Tree-resin incense burned in Maya ceremony; the smoke at Chichicastenango.</dd>
+    <dt>Aj q'ij / day keeper</dt><dd>Maya spiritual guide who keeps the 260 day calendar for the community.</dd>
+    <dt>Nawal</dt><dd>A person's day-spirit, assigned by their tzolk'in birth date.</dd>
+    <dt>Xibalba</dt><dd>The underworld, "place of fright," reached through caves and still water; setting of the Hero Twins story.</dd>
+    <dt>Hunahpú and Xbalanqué</dt><dd>The Hero Twins, who defeated the lords of death and became sun and moon.</dd>
+    <dt>Q'umarkaj</dt><dd>The K'iche' capital, burned by the Spanish in 1524; its ruins lie near Chichicastenango.</dd>
+    <dt>Stela (plural stelae)</dt><dd>Carved standing stone recording a ruler's deeds and Long Count dates; Tikal has dozens.</dd>
+    <dt>Roof comb</dt><dd>The tall decorative crest crowning Maya temples, like Temple I's.</dd>
+    <dt>K'iche', Kaqchikel, Tz'utujil</dt><dd>Three of Guatemala's 22 Mayan languages and peoples: K'iche' around Chichicastenango, Kaqchikel on the lake's north shore, Tz'utujil on the south.</dd>
+    <dt>Tuk tuk / tuc tuc</dt><dd>Three-wheeled moto-taxi; your ride to dinner on Aug 8.</dd>
+    <dt>Xocomel</dt><dd>The lake's famous afternoon wind, "the wind that carries away sin."</dd>
+    <dt>Lancha</dt><dd>The public and tour boats that connect the lake towns.</dd>
+  </dl>
+</section>
+
+<p class="footnote">Prepared for the Aug 6-17 Guatemala and Belize itinerary. The maps and diagrams are built into this file and display anywhere. The photo cards link to Wikimedia Commons; the photos themselves appear inline when this file is opened in a full web browser (the in-app preview blocks outside images for security). The Popol Vuh retelling follows the Ximénez manuscript as rendered in the standard modern translations; where scholars differ on name spellings, common English forms are used.</p>
+
+</main>
+<div class="sash" aria-hidden="true"></div>
+</body>
+</html>
